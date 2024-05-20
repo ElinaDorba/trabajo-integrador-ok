@@ -249,101 +249,95 @@ header {
 
 
 /* estilo contacto */
-.mainContacto {
+.mainContacto{
+    margin: 0px;
     padding: 0px;
-    margin: 0px;
     width: 100%;
 }
-.conteiner-contacto {
-    display: flex;
-    width: 100%;
-    max-width: 1280px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 30px 0px;
-    font-size: 1rem;
-    align-items: baseline;
-    justify-content: center;
-}
+
 .titulo-contacto {
-    margin: 0px;
-    margin-top: 0px;
-    padding: 30px 0px;
+    grid-area: 1/5/2/7;
+    margin-top: 20px;
     color: black;
     font-family: Sofia Sans, sans-serif;
     text-align: center;
     font-size: 1.5rem;
-    width: 100%;
+}
+.conteiner-contacto{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 60px 450px;
+    gap: 30px;
+}
+.texto-contacto{
+    grid-area: 2/2/3/6
 }
 .texto-contacto p {
-    margin-top: 0px;
-    width: 100%;
     justify-content: center;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     text-align: left;
     color: black;
-    padding: 30px 20px 10px;
 }
 .texto-contacto iframe {
-    justify-content: center;
-    padding: 10px 20px 10px;
+    width: 90%;
+    height: auto;
 }
+
 .formulario-contacto {
-    font-size: 0.9rem;
-    margin-top: 0;
-    padding: 10px 20px 10px;
-    line-height: 1.7rem;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    grid-area: 2/6/3/10;
 }
 
-.nombre {
-    padding-right: 4.43px;
-}
-
-.email {
-    padding-right: 15.44px;
-}
 .formulario-contacto .formulario input[type="text"] {
     background-color: #F1EEDC;
     width: 70%;
     border:none;
-    padding: 3px;
 }
 .formulario-contacto .formulario input[type="button"] {
     background-color: #a7a393;
     color: white;
     border: none;
-    padding: 5px;
 }
+
 #enviar, #nuevo{
     background-color: #a7a393;
     color: white;
     border: none;
-    padding: 5px;
 }
 #comentarios{
     width: 90%;
     background-color: #F1EEDC;
     border: none;
-    padding: 5px;
+
 }
 
-@media screen and (max-width: 800px) {
-    .conteiner-contacto {
-        width: 90%;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
-        padding: 35px 0px;
+@media screen and (max-width: 600px) {
+    .conteiner-contacto{
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-size: 1rem;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: 60px 400px 400px;
+        gap: 30px;
     }
-}
-@media screen and (max-width: 550px) {
-    .conteiner-contacto {
-        width: 90%;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 40px;
-        padding: 35px 0px;
+    .titulo-contacto {
+        grid-area: 1/2/2/5;
     }
+    .texto-contacto{
+        grid-area: 2/2/3/5;
+    }
+    .formulario-contacto {
+        line-height: 1.2rem;
+        grid-area: 3/2/4/5;
+    }
+
 }
 
 /* estilo suscripciones */

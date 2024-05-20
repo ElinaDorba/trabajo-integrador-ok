@@ -32,11 +32,14 @@
         </aside>
 
         <main class="mainContacto">
-            <h1 class="titulo-contacto">Contacto</h1>
+
             <div class="conteiner-contacto">
+                <h1 class="titulo-contacto">Contacto</h1>
                 <div class="texto-contacto">
                     <p>Para una comunicación rápida podes contactarnos por WhatsApp al siguiente número:</p>
+                    <br>
                     <p>Ventas, Consultas y Servicio Posventa al 11-4657-3320</p>
+                    <br>
                     <p>E-mail: info@designhome.com</p>
                     <br>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.578526821922!2d-58.42816612416392!3d-34.58952967295937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb58779281f47%3A0x23a8a014b0291c68!2sMalabia%201780%2C%20C1414DMJ%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1714928872177!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -53,14 +56,15 @@
                         <input type="text" name="telefono" size="8" maxlength="12" id="telefono">
                         <br><br>
                         <textarea name="comentarios" id="comentarios" cols="30" rows="10" placeholder="Ingrese su mensaje"></textarea>
+                        <p id="error"></p>
+                        <br>
+                        <input type="button" id="enviar" value="Enviar" onclick="validarEnviar()">
+                        <input type="button"  id="nuevo" value="Limpiar formulario">
+                        <script src="./js/validacion.js"></script>
+                        </div>
                     </form>
                     <br>
-                <p id="error"></p>
-                <br>
-                <input type="button" id="enviar" value="Enviar" onclick="validarEnviar()">
-                <input type="button"  id="nuevo" value="Limpiar formulario">
-                <script src="./js/validacion.js"></script>
-                </div>
+
             </div>
 
 
