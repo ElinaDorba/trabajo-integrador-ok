@@ -308,6 +308,7 @@ header {
     background-color: #a7a393;
     color: white;
     border: none;
+    padding: 5px;
 }
 #comentarios{
     width: 90%;
