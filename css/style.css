@@ -1,6 +1,6 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
     font-family: Sofia Sans, sans-serif;
 }
@@ -10,6 +10,9 @@
 }
 
 header {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -18,8 +21,16 @@ header {
     position: relative;
     z-index: 20;
 }
+.navegador{
+    width: 100%;
+}
 
 /* estilo menu */
+.navegador{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
 .logo {
     max-width: 9rem;
 }
@@ -55,7 +66,7 @@ header {
     .abrir-menu,
     .cerrar-menu {
         display: block;
-        border: 0;
+        border: 0px;
         font-size: 1rem;
         background-color: transparent;
         cursor: pointer;
@@ -69,14 +80,13 @@ header {
         align-items: end;
         gap: 1rem;
         position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
         background-color: #B4B4B8;
         padding: 2rem;
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
         transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-        transform: translateX(100%);
         z-index: 30;
     }
 
@@ -144,7 +154,6 @@ header {
 }
 
 
-
 .prev,
 .next {
     cursor: pointer;
@@ -173,6 +182,11 @@ header {
 }
 
 /* estilo productos */
+.wrapper{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+}
 .conteiner-items {
     padding: 3rem;
     display: grid;
@@ -236,6 +250,8 @@ header {
 
 /* estilo contacto */
 .mainContacto {
+    padding: 0px;
+    margin: 0px;
     width: 100%;
 }
 .conteiner-contacto {
@@ -398,6 +414,8 @@ header {
 
 /* estilo del footer */
 .pie-pagina {
+    padding: 0px;
+    margin: 0px;
     width: 100%;
     background-color: #C7C8CC;
 }
